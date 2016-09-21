@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true">
+
+    <ImageView
+        android:src="@drawable/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iwLogo"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tvSignupRendezvous"
+        android:layout_toStartOf="@+id/tvSignupRendezvous" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Rendezvous"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:id="@+id/tvSignupRendezvous"
+        android:layout_alignTop="@+id/iwLogo"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/signup_hint_name"
+        android:ems="10"
+        android:id="@+id/etSignName"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/tvSignupRendezvous"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="@string/signup_hint_email"
+        android:id="@+id/etSignEmail"
+        android:layout_below="@+id/etSignName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etSignPassword"
+        android:hint="@string/signup_hint_password"
+        android:layout_below="@+id/etSignEmail"
+        android:layout_alignRight="@+id/etSignEmail"
+        android:layout_alignEnd="@+id/etSignEmail" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etSignRe_password"
+        android:hint="@string/signup_hint_rePassword"
+        android:layout_below="@+id/etSignPassword"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_createAccount"
+        android:id="@+id/bCreateAccount"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/etSignRe_password"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+<!-- From: file:/C:/Users/Burak%20M/Desktop/Parse-Starter-Project-1.8.3/ParseStarterProject/res/layout/signup.xml -->

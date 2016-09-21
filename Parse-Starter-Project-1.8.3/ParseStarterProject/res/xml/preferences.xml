@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/settings_category_account">
+        <PreferenceScreen
+            android:key="pref_editAccount"
+            android:title="@string/settings_editAccount"
+            android:persistent="false">
+            <EditTextPreference
+                android:key="change_name"
+                android:title="@string/settings_name"
+                android:inputType="textPersonName"
+                android:dialogMessage="Enter your name" />
+            <Preference
+                android:key="change_username"
+                android:title="@string/settings_username" />
+            <EditTextPreference
+                android:key="change_email"
+                android:title="@string/settings_email"
+                android:inputType="textEmailAddress"
+                android:dialogMessage="Enter your new email address" />
+            <EditTextPreference
+                android:key="change_phone"
+                android:title="@string/settings_phoneNumber"
+                android:inputType="phone"
+                android:dialogMessage="Enter your new phone number" />
+            <EditTextPreference
+                android:key="change_address"
+                android:title="@string/settings_address"
+                android:inputType="textPostalAddress"
+                android:dialogMessage="Enter your new address" />
+            <Preference android:title="@string/settings_change_password">
+                <intent android:action="android.intent.action.RESETPASSWORD" />
+            </Preference>
+        </PreferenceScreen>
+
+        <Preference android:title="@string/settings_logout">
+            <intent android:action="android.intent.action.LOGOUT" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_category_general">
+        <ListPreference
+            android:entries="@array/languages"
+            android:entryValues="@array/values"
+            android:key="pref_language"
+            android:title="@string/settings_change_language" />
+        <ListPreference
+            android:entries="@array/city"
+            android:entryValues="@array/city_values"
+            android:key="pref_city"
+            android:title="@string/settings_city" />
+        <Preference android:title="@string/settings_help">
+            <intent android:action="android.intent.action.HELP" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_category_notifications">
+        <ListPreference
+            android:entries="@array/notifyMe"
+            android:entryValues="@array/notify_values"
+            android:key="pref_notifyme"
+            android:title="@string/settings_notifyMeBefore" />
+        <SwitchPreference
+            android:key="pref_email_notification"
+            android:title="@string/settings_emailNotification"
+            android:summaryOff="Notify me via email" />
+        <SwitchPreference
+            android:key="pref_push_notification"
+            android:title="@string/settings_pushNotification"
+            android:summaryOff="Notify me via notifications"  />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_category_aboutUs">
+        <Preference android:title="@string/settings_aboutUs">
+            <intent android:action="android.intent.action.ABOUTUS" />
+        </Preference>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

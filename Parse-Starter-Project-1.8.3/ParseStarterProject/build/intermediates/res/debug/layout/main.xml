@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibAdd"
+            android:src="@drawable/ic_action_new"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Categories"
+            android:layout_margin="15dp"
+            android:textSize="30sp"
+            android:id="@+id/tvCategoriesTitle" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/view"
+            android:background="#000000"
+            android:layout_below="@+id/tvCategoriesTitle" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvCategories"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>
+    <!-- The navigation drawer -->
+<LinearLayout
+android:id="@+id/left_drawer"
+android:layout_width="240dp"
+android:layout_height="match_parent"
+android:layout_gravity="start"
+android:choiceMode="singleChoice"
+android:divider="@android:color/transparent"
+android:dividerHeight="0dp"
+android:background="#ffffff"
+android:orientation="vertical"
+android:layout_marginLeft="15dp">
+
+
+<Button
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:text="Beginning"
+    android:onClick="showDatePickerDialog"
+    android:id="@+id/button" />
+
+<Button
+    android:layout_width="240dp"
+    android:layout_marginTop="1dp"
+    android:layout_height="wrap_content"
+    android:text="End"
+    android:onClick="showDatePickerDialog"
+    android:id="@+id/button3" />
+
+<Button
+    android:layout_width="240dp"
+    android:layout_marginTop="1dp"
+    android:layout_height="wrap_content"
+    android:text="Sort"
+    android:onClick="sortDate"
+    android:id="@+id/sortDate"
+    />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#858585"
+    android:layout_below="@+id/eventImage"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="4dp" />
+
+
+<Spinner
+    android:layout_width="240dp"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinnerCity" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#858585"
+    android:layout_below="@+id/eventImage"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="4dp" />
+
+<Spinner
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:id="@+id/spinnerEvent" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#858585"
+    android:layout_below="@+id/eventImage"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="4dp" />
+
+<Button
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="Popularity"
+    android:onClick="sortPopularity"
+    android:id="@+id/button2" />
+
+
+</LinearLayout>
+</android.support.v4.widget.DrawerLayout><!-- From: file:/C:/Users/Burak%20M/Desktop/Parse-Starter-Project-1.8.3/ParseStarterProject/res/layout/main.xml -->

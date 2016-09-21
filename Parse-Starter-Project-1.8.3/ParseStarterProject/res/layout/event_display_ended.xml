@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="This event has ended!"
+                android:textSize="35sp"
+                android:textColor="#D50000"
+                android:id="@+id/tvEnded"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/organizer"
+                android:id="@+id/tvOrganizer"
+                android:layout_alignBottom="@+id/tvOrganizerName"
+                android:layout_alignLeft="@+id/tvEventName"
+                android:layout_alignStart="@+id/tvEventName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/organizer_value"
+                android:id="@+id/tvOrganizerName"
+                android:clickable="true"
+                android:layout_below="@id/tvEnded"
+                android:layout_toRightOf="@id/tvOrganizer"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp" />
+
+            <ImageView
+                android:src="@drawable/whiplash2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/ivOrganizerImage"
+                android:clickable="true"
+                android:layout_toRightOf="@+id/tvOrganizerName"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBottom="@+id/tvOrganizerName"
+                android:layout_below="@+id/tvEnded" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="40sp"
+                android:text="@string/event_name"
+                android:id="@+id/tvEventName"
+                android:layout_below="@+id/ivOrganizerImage"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp" />
+
+            <ImageView
+                android:src="@drawable/whiplash2"
+                android:layout_width="110dp"
+                android:layout_height="120dp"
+                android:id="@+id/ivEventImage"
+                android:layout_alignTop="@id/tvPersonValue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Director:"
+                android:id="@+id/tvPerson"
+                android:layout_below="@id/tvEventName"
+                android:layout_alignLeft="@+id/tvEventName"
+                android:layout_alignStart="@+id/tvEventName"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:layout_width="105sp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Christian Baleas"
+                android:id="@+id/tvPersonValue"
+                android:layout_alignTop="@+id/tvPerson"
+                android:layout_toRightOf="@+id/tvPerson"
+                android:layout_toEndOf="@+id/tvPerson"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/date"
+                android:id="@+id/tvDate"
+                android:layout_below="@id/tvPersonValue"
+                android:layout_alignLeft="@+id/tvEventName"
+                android:layout_alignStart="@+id/tvEventName"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/date_value"
+                android:id="@+id/tvDateValue"
+                android:layout_alignBottom="@+id/tvDate"
+                android:layout_toRightOf="@+id/tvDate"
+                android:layout_toEndOf="@+id/tvDate"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/time"
+                android:id="@+id/tvTime"
+                android:layout_below="@id/tvDate"
+                android:layout_alignStart="@+id/tvDate"
+                android:layout_alignLeft="@+id/tvDate"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/time_value"
+                android:id="@+id/tvTimeValue"
+                android:layout_alignBottom="@+id/tvTime"
+                android:layout_toRightOf="@+id/tvTime"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/address"
+                android:id="@+id/tvAddress"
+                android:layout_below="@+id/tvTime"
+                android:layout_alignLeft="@+id/tvDate"
+                android:layout_alignStart="@+id/tvDate"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/address_value"
+                android:id="@+id/tvAddressValue"
+                android:layout_alignTop="@+id/tvAddress"
+                android:layout_toRightOf="@+id/tvAddress"
+                android:layout_toLeftOf="@+id/ivMap"
+                android:layout_toEndOf="@+id/tvAddress"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:src="@drawable/map_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivMap"
+                android:clickable="true"
+                android:layout_alignTop="@+id/tvAddressValue"
+                android:layout_alignRight="@+id/ivEventImage"
+                android:layout_alignEnd="@+id/ivEventImage"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/city"
+                android:id="@+id/tvCity"
+                android:layout_below="@+id/tvAddressValue"
+                android:layout_alignLeft="@+id/tvAddress"
+                android:layout_alignStart="@+id/tvAddress"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/city_value"
+                android:id="@+id/tvCityValue"
+                android:layout_alignBottom="@+id/tvCity"
+                android:layout_toRightOf="@+id/tvCity"
+                android:layout_toEndOf="@+id/tvCity"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Rating:"
+                android:id="@+id/tvRating"
+                android:layout_below="@+id/tvCity"
+                android:layout_alignLeft="@+id/tvAddress"
+                android:layout_alignStart="@+id/tvAddress"
+                android:layout_marginTop="20dp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="3.0"
+                android:layout_below="@+id/tvCityValue"
+                android:layout_toRightOf="@id/tvRating"
+                android:layout_marginLeft="15dp"
+                android:clickable="false"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:drawableStart="@android:drawable/presence_video_online"
+                android:drawableLeft="@android:drawable/presence_video_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bVideo"
+                android:id="@+id/bVideo"
+                android:layout_below="@+id/ratingBar"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/bRate"
+                android:layout_alignStart="@+id/ratingBar"
+                android:layout_alignLeft="@+id/ratingBar"
+                android:layout_toStartOf="@+id/bRate"
+                android:layout_toLeftOf="@+id/bRate" />
+
+            <Button
+                android:drawableStart="@android:drawable/btn_star_big_on"
+                android:drawableLeft="@android:drawable/btn_star_big_on"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:id="@+id/bRate"
+                android:layout_below="@+id/ratingBar"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignBottom="@+id/bVideo"
+                android:layout_alignRight="@+id/ratingBar"
+                android:layout_alignEnd="@+id/ratingBar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/description"
+                android:id="@+id/tvDescription"
+                android:layout_below="@+id/ratingBar"
+                android:layout_alignLeft="@+id/tvCity"
+                android:layout_alignStart="@+id/tvCity"
+                android:layout_marginTop="80dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/description_value"
+                android:id="@+id/tvDescriptionValue"
+                android:layout_below="@+id/tvDescription"
+                android:layout_marginTop="5dp"
+                android:layout_alignLeft="@+id/tvDescription"
+                android:layout_alignStart="@+id/tvDescription"
+                android:layout_alignEnd="@id/ivMap"
+                android:layout_alignRight="@id/ivMap" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

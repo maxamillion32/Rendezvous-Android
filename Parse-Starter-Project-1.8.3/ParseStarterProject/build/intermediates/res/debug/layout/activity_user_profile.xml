@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".User"
+    android:id="@+id/user"
+    android:weightSum="1">
+
+
+    <com.parse.ParseImageView
+        android:id="@+id/image"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/my_profile"
+        android:layout_alignTop="@+id/ratingBar"
+        android:layout_toLeftOf="@+id/button8"
+        android:layout_toStartOf="@+id/button8" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="15 following"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button8"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@+id/button6"
+        android:layout_toLeftOf="@+id/button6" />
+
+    <Button
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:text="15 followers"
+        android:layout_alignParentRight="true"
+        android:id="@+id/button6"
+        android:layout_above="@+id/button7" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="96 Ongoings"
+        android:id="@+id/button7"
+        android:layout_below="@+id/button5"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignEnd="@+id/button5" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:id="@+id/button"
+        android:layout_below="@+id/button5"
+        android:layout_alignBottom="@+id/button7"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignStart="@+id/button6"
+        android:layout_alignRight="@+id/button6"
+        android:layout_alignEnd="@+id/button6" />
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:text="Verified"
+        android:id="@+id/button8"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/ratingBar"
+         />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_marginBottom="5dp"
+        android:numStars="5"
+        android:isIndicator="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="Events by joseph45"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/button7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/listView"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Past Events"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:layout_alignRight="@+id/listView"
+        android:layout_alignEnd="@+id/listView" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
+
+<!-- From: file:/C:/Users/Burak%20M/Desktop/Parse-Starter-Project-1.8.3/ParseStarterProject/res/layout/activity_user_profile.xml -->

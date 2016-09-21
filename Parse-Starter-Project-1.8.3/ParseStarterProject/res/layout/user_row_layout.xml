@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    >
+
+    <com.parse.ParseImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/userImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/cinema"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Grey"
+        android:id="@+id/usernameText"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_above="@+id/view"
+        android:layout_toRightOf="@+id/userImage"
+        android:layout_toEndOf="@+id/userImage" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/userImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view" />
+
+</RelativeLayout>

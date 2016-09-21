@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:src="@drawable/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iwLogo"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/etPassword"
+        android:layout_toStartOf="@+id/etPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Rendezvous"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:id="@+id/tvLoginRendezvous"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/iwLogo"
+        android:layout_toRightOf="@+id/iwLogo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/login_userName"
+        android:ems="10"
+        android:id="@+id/etUserName"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/iwLogo"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/login_username"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:layout_below="@+id/etUserName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_forgotPassword"
+        android:id="@+id/tvForgotPassword"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:linksClickable="true"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:textColor="@color/wallet_holo_blue_light" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_LOGIN"
+        android:id="@+id/bLogin"
+        android:layout_below="@+id/cbRememberMe"
+        android:layout_alignLeft="@+id/cbRememberMe"
+        android:layout_alignStart="@+id/cbRememberMe"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/tvLoginRendezvous"
+        android:layout_alignEnd="@+id/tvLoginRendezvous" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_SIGNUP"
+        android:id="@+id/bSignup"
+        android:layout_below="@+id/bLogin"
+        android:layout_toRightOf="@+id/iwLogo"
+        android:layout_alignRight="@+id/bLogin"
+        android:layout_alignEnd="@+id/bLogin" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_rememberMe"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cbRememberMe"
+        android:checked="false"
+        android:layout_below="@+id/tvForgotPassword"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_alignRight="@+id/etPassword"
+        android:layout_alignEnd="@+id/etPassword" />
+
+
+</RelativeLayout>
